@@ -228,8 +228,8 @@ msvc {
 }
 
 qt {
-    contains(QT, core): QT += concurrent
-    contains(QT, gui): QT += widgets
+    contains(QT, core): QT += debug concurrent
+    contains(QT, gui): QT += debug widgets
 }
 
 QBSFILE = $$replace(_PRO_FILE_, \\.pro$, .qbs)
